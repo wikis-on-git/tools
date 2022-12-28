@@ -15,6 +15,8 @@ while IFS= read -r -d $'\0' folder; do
 
     git config --local remote.origin.namespaces '(Main) Talk Wikipedia Category Help Template'
     git config --local remote.origin.fetchstrategy by_rev
+    
+    # manual states to use `git pull --rebase` - but as we use a bare git, it makes no sense to pull here.
     git fetch origin 2>&1 | tee -a "../fetch_$(basename $folder)_update.log"
 
     git repack -F -d -A -n --window=500 --depth=2000 --write-bitmap-index --write-midx
