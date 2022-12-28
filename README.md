@@ -1,6 +1,6 @@
 # tools
 
-Crude set of scripts to process the git's from wikipedia. The toolset expects to be placed in a project subfolder and have the following folders placed next to it:
+Crude set of scripts to create, process and update the git's from wikipedia. The toolset expects to be placed in a project subfolder and have the following folders placed next to it:
 
 ``
 ./00-completed
